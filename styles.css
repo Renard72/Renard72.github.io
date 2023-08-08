@@ -197,9 +197,12 @@ footer h3{
         flex-direction: column;
         width: 100vw;
     }
-    header, footer{
+    header{
         width: 100vw;
     }
+   footer{
+      width: 110%
+   }
     main, section{
         display: block;
         margin-left: auto;
