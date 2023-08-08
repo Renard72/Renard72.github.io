@@ -198,7 +198,7 @@ footer h3{
         width: 100vw;
     }
     header, footer{
-        width: 100%;
+        width: 100vw;
     }
     main, section{
         display: block;
