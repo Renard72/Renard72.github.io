@@ -153,6 +153,7 @@ footer{
     margin-top: 2em;
     display: block;
     padding: 1.5em;
+    width: 100vw;
 }
 footer h3{
     color: #fbfbfb !important;
@@ -171,12 +172,9 @@ footer h3{
         flex-direction: column;
         width: 100vw;
     }
-    header{
-        width: 100vw;
+    header, footer{
+        width: 100%;
     }
-   footer{
-      display: block;
-      width: 110vw;
    }
     main, section{
         display: block;
