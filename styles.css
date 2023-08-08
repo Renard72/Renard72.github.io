@@ -8,7 +8,6 @@ body{
     padding: 0;
     background-color: rgb(241, 238, 238);
     width: 100%;
-   display: flex;
 }
 header, nav{
     height: fit-content;
@@ -144,6 +143,11 @@ h4{
     display: flex;
     flex-direction: column;
 }
+button ion-icon{
+    font-size: 1.5em;
+    padding-left: 0.5em;
+    color: #fbfbfb;
+}
 .doku{
     width: 350px;
     margin: 1.5em;
@@ -152,9 +156,9 @@ footer{
     background-color: #213ac4;
     color:#fbfbfb;
     margin-top: 2em;
-    display: block;
+    display: flex;
+    flex-direction: column;
     padding: 1.5em;
-    width: 100vw;
 }
 footer h3{
     color: #fbfbfb !important;
@@ -167,7 +171,7 @@ footer h3{
     color: #fbfbfb;
     font-size: 2em;
 }
-@media only screen and (max-width: 540px){
+@media only screen and (max-width: 1080px){
     body{
         display: flex;
         flex-direction: column;
@@ -176,7 +180,6 @@ footer h3{
     header, footer{
         width: 100%;
     }
-   }
     main, section{
         display: block;
         margin-left: auto;
