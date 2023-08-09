@@ -94,7 +94,6 @@ aside{
     margin-top: 1.5em;
     margin-left: 1em;
     padding: 1.5em; 
-    
 }
 ul{
     margin: 0;
@@ -104,6 +103,10 @@ ul li{
 }
 p{
     margin-bottom: 0;
+}
+#summary p{
+    text-align: justify;
+    line-height: 1.3em;
 }
 .expcontent{
     display: flex;
@@ -149,8 +152,9 @@ button ion-icon{
     color: #fbfbfb;
 }
 .doku{
-    width: 350px;
+    width: 330px;
     margin: 1.5em;
+    align-self: center;
 }
 footer{
     background-color: #213ac4;
@@ -177,8 +181,12 @@ footer h3{
         flex-direction: column;
         width: 100vw;
     }
-    header, footer{
+    header{
+        width:100%;
+    }
+    footer{
         width: 100%;
+        object-fit: fill;
     }
     main, section{
         display: block;
