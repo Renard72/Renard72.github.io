@@ -4,11 +4,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name ="keywords" content="HTML, CSS">
-    <meta name="description" content="Welcome to my portfolio page! I am an underraduate student looking for SEO related jobs to add into my experience. Here's a preview of my educational and work experiences.">
+    <meta name="description" content="...">
     <link rel="stylesheet" href="styles.css">
     <link href="About_porta.html">
     <link rel="stylesheet" href="https://ionic.io/ionicons">
-    
     <title>
     Welcome to my Portfolio page!
     </title>
@@ -20,8 +19,8 @@
     <header>
         <nav>
             <div class="navigation menu">
-                <img src="Porta logo.svg" alt="logo">
-                <ul class="nav">
+                <img src="image elements/Porta logo.svg" alt="logo">
+                <ul class="navigation">
                     <li><a href='#biodata' class="navlink">Profile</a></li>
                     <li><a href='#experience' class="navlink">Experience</a></li>                        
                     <li><a href='#skills' class="navlink">Skills</a></li>
@@ -30,9 +29,36 @@
             </div>
         </nav>
     </header>
-    <main id="biodata">
-        <section>
-            <aside>
+    <main id="hero">
+        <div class="illustration">
+            <div class="outer-circle">
+                <div class="inner-circle">
+                    <div class="person">
+                        <div class="hair"></div>
+                        <div class="side-hair "></div>
+                        <div class="head">
+                            <div class="eye left"></div>
+                            <div class="eye right"></div>
+                        </div>
+                        <div class="chest">
+                            <div class="neck"></div>
+                        </div>
+                    </div>
+                    <div class="laptop"></div>
+                    <div class="keyboard"></div>
+                    <div class="desk"></div>
+                </div>
+            </div>
+        </div>
+        <div class="intro">
+            <h1>Hello there! 👋🏼</h1>
+            <h2>I'm <strong>Antonius Renard</strong> , an undergraduate student aspiring to be a front-end web developer with a speciality in creating simple and efficient designs.</h2>
+            <button class ="scroll-down"><a href="#resume">Learn more ⬇️</a>
+        </div>
+    </main>
+    <section id="resume">
+        <div class="leftside">
+            <aside id="biodata">
                 <img src="Foto author.svg" alt="pas foto author">
                     <div class="areabiodata">
                         <div class="info">
@@ -61,90 +87,164 @@
                         </div>
                     </div>
             </aside>
-            <article>
-                 <div class="experience" id="summary">
-                    <h3>Perkenalan Singkat</h3>
-                    <p>Saya adalah seorang mahasiswa yang sedang mencari pengalaman bekerja yang sesuai dengan bidang yang sedang saya tekuni.
-                    Saya merupakan individu yang teliti, bisa diajak bekerjasama, kreatif, dan suka memecahkan masalah secara praktis dan efisien.
-                    Selain itu, saya juga suka mempelajari hal-hal baru serta menerima tantangan dan mengikuti perkembangan teknologi modern.</p>
-                </div>
-                <div class="experience" id="experience">
-                    <h3>Pengalaman</h3>
-                        <h4>Pendidikan</h4>
-                        <p class="organisasi">SMA Strada Santo Thomas Aquino</p>
-                        <p class="periode">2018-2021</p>
-                        <p class="organisasi">Universitas Sanata Dharma</p>
-                        <p class="periode">2021-2023</p>
-                        <p class="organisasi">Universitas Buddhi Dharma</p>
-                        <p class="periode">Ongoing (2023- lulus)</p>
-                        <h4>Organisasi</h4>
-                        <p class="organisasi">Himpunan Mahasiswa Matematika</p>
-                        <p class="lembaga">Universitas Sanata Dharma</p> 
-                        <p class="periode">2021-2022</p>
-                        <p class="posisi">Jurnalis</p>  
-                        <ul>
-                            <li>Membuat desain poster dan sertifikat untuk kegiatan program studi</li>
-                            <li>Mendokumentasikan kegiatan kampus melalui foto dan video</li>
-                            <li>Membuat kuesioner survey pasca kegiatan</li>
-                        </ul>
-                        <h4>Magang</h4>
-                        <p class="organisasi">Pradita Corporate Partner Lounge</p>
-                        <p class="lembaga">Pradita University</p> 
-                        <p class="periode">Maret - Juni 2023</p>
-                        <p class="posisi">Admin</p>  
-                        <ul>
-                            <li>Memantau reservasi coworking space melalui portal</li>
-                            <li>Memastikan kesediaan keperluan ruangan kerja</li>
-                            <li>Membuat laporan data reservasi setiap akhir bulan </li>
-                        </ul>
-                </div>
-                <div id="skills" class="minicards">
-                    <div id="tools" class="experience">
-                        <h3>Skills</h3>
-                        <ul>
-                            <li>Google Workspace</li>
-                            <li>Microsoft Word</li>
-                            <li>Microsoft Powerpoint</li>
-                            <li>Canva</li>
-                            <li>HTML/CSS</li>
-                            <li>JS</li>
-                            <li>React JS</li>
-                            <li>Python</li>
-                        </ul>
-                    </div>
-                    <div id="lang" class="experience">
-                        <h3>Bahasa/ Languages</h3>
-                        <ul>
-                            <li>Bahasa Indonesia</li>
-                            <li>English (C2 Level)</li>
-                        </ul>
-                    </div>
-                </div> 
-                <div id="Portfolio" class="experience portfolio">
-                    <h3>Portfolio</h3>
-                    <img src="Sertif BedBuk.jpg" alt="sertifikat event bedah buku">
-                    <img src="Sertif Funmath  Renard.jpg" alt="sertifikat Funmath">
-                </div>
-            </article>
+            <div class="experience" id="skills">
+                <h3>Skills</h3>
+                <ul>
+                    <li>Google Workspace</li>
+                    <li>Microsoft Word</li>
+                    <li>Microsoft Powerpoint</li>
+                    <li>Canva</li>
+                    <li>HTML/CSS</li>
+                    <li>JS</li>
+                    <li>React JS</li>
+                    <li>Python</li>
+                </ul>
+            </div>
+            <div class="experience">
+                <h3>Bahasa/ Languages</h3>
+                <ul>
+                    <li>Bahasa Indonesia</li>
+                    <li>English (C2 Level)</li>
+                </ul>
+            </div>
+        </div>
+        <article>
+            <div class="experience" id="summary">
+                <h3>Perkenalan Singkat</h3>
+                <p>Saya adalah seorang mahasiswa yang sedang mencari pengalaman bekerja yang sesuai dengan bidang yang sedang saya tekuni.
+                Saya merupakan individu yang teliti, bisa diajak bekerjasama, kreatif, dan suka memecahkan masalah secara praktis dan efisien.
+                Selain itu, saya juga suka mempelajari hal-hal baru serta menerima tantangan dan mengikuti perkembangan teknologi modern.</p>
+            </div>
+            <div class="experience" id="experience">
+                <h3>Pengalaman</h3>
+                    <h4>Pendidikan</h4>
+                    <p class="organisasi">SMA Strada Santo Thomas Aquino</p>
+                    <p class="periode">2018-2021</p>
+                    <br>
+                    <p class="organisasi">Universitas Sanata Dharma</p>
+                    <p class="lembaga">Program Studi Matematika</p>
+                    <p class="periode">2021-2023</p>
+                    <br>
+                    <p class="organisasi">Universitas Buddhi Dharma</p>
+                    <p class="lembaga">Program Studi Sastra Inggris</p>
+                    <p class="periode">Ongoing (2023- lulus)</p>
+                    <h4>Organisasi</h4>
+                    <p class="organisasi">Himpunan Mahasiswa Matematika</p>
+                    <p class="lembaga">Universitas Sanata Dharma</p> 
+                    <p class="periode">2021-2022</p>
+                    <p class="posisi">Jurnalis</p>  
+                    <ul>
+                        <li>Membuat desain poster dan sertifikat untuk kegiatan program studi</li>
+                        <li>Mendokumentasikan kegiatan kampus melalui foto dan video</li>
+                        <li>Membuat kuesioner survey pasca kegiatan</li>
+                    </ul>
+                    <h4>Magang</h4>
+                    <p class="organisasi">Pradita Corporate Partner Lounge</p>
+                    <p class="lembaga">Pradita University</p> 
+                    <p class="periode">Maret - Juni 2023</p>
+                    <p class="posisi">Admin</p>  
+                    <ul>
+                        <li>Memantau reservasi coworking space melalui portal</li>
+                        <li>Memastikan kesediaan keperluan ruangan kerja</li>
+                        <li>Membuat laporan data reservasi setiap akhir bulan </li>
+                    </ul>
+            </div>
+            
+            <div id="Portfolio" class="experience portfolio">
+                <h3>Portfolio</h3>
+                <img src="Sertif BedBuk.jpg" alt="sertifikat event bedah buku">
+                <img src="Sertif Funmath  Renard.jpg" alt="sertifikat Funmath">
+            </div>
+        </article>
+        <div class="leftside">
             <div id="sertif" class="experience certification">
                 <h3>Sertifikat</h3>
-                <img src="1.svg" alt="sertifikat AYO academy" class="doku">
-                <img src="2.svg" alt="sertifikat freecodecamp.org" class="doku">
-                <img src="Sertif_FCC_JS-removebg-preview (1).png" alt="sertifikat freecodecamp javascript" class="doku">
-                <img src="sertif_FCC_Front_End-removebg-preview.png" alt="sertifikat freecodecamp front end libraries" class="doku">
-                <img src="sertif_Dicoding-removebg-preview.png" alt="sertifikat Dicoding x Baparekraf" class="doku">
-                <img src="3.svg" alt="sertifikat ASEAN DSE" class="doku">
-                <img src="Sertif_Magang-removebg-preview.png" alt="sertifikat Magang Pradita Corporate Partner Lounge" class="doku">
+                <br>
+                <ul>
+                    <li class="organisasi">ASEAN Youth Organization x AMEICC Certificate for Circular Economy course completion</li>
+                        <p class="periode">Februari 2023</p>
+                        <p class="lembaga">Kursus gratis yang diselenggarakan ASEAN Youth Organization untuk mengedukasi peserta mengenai ekonomi sirkuler yang lebih ramah lingkungan dan ekonomis</p>
+                        <a href="https://drive.google.com/file/d/1_t_21ZQddw-uo-MV4X9nOzI8kK1OslOD/view?usp=drive_link" target="_blank"><div class="getcertif">Lihat sertifikat 👉🏼</div></a>
+                    <br>
+
+                    <li class="organisasi">Freecodecamp Responsive Web Design Certificate</li>
+                        <p class="periode">Mei 2023</p>
+                        <p class="lembaga">Kursus HTML dan CSS dasar yang diselenggarakan Freecodecamp secara gratis, diselesaikan dalam waktu kurang lebih 120 jam.</p>
+                        <a href="https://drive.google.com/file/d/1qLStiv0z4DW1UCZhScSfTojeXeTxMnn9/view?usp=drive_link" target="_blank"><div class="getcertif">Lihat sertifikat 👉🏼</div></a>
+                    <br> 
+
+                    <li class="organisasi">Dicoding x Baparekraf Digital Talent Training 2023</li>
+                        <p class="periode">Mei 2023</p>
+                        <p class="lembaga">Kursus HTML dan CSS yang diselenggarakan oleh Badan Pariwisata dan Ekonomi Kreatif Indonesia dalam kolaborasi dengan Dicoding, diselesaikan dalam waktu kurang lebih 41 jam.</p>
+                        <a href="https://drive.google.com/file/d/1g3wfEhzBgtc57tj9BT_56CRsFHaijFLs/view?usp=drive_link" target="_blank"><div class="getcertif">Lihat sertifikat 👉🏼</div></a>
+                    <br>
+
+                    <li class="organisasi">Freecodecamp Javascript Algorithm and Data Structures Certification</li>
+                        <p class="periode">Juni 2023</p>
+                        <p class="lembaga">Kursus Javascript dasar yang diselenggarakan Freecodecamp secara gratis, diselesaikan dalam waktu kurang lebih 140 jam.</p>
+                        <a href="https://drive.google.com/file/d/1kQC5pvLI1JzBhHX-icg-PHDrOzdm4Gvg/view?usp=drive_link" target="_blank"><div class="getcertif">Lihat sertifikat 👉🏼</div></a>
+                    <br>
+
+                    <li class="organisasi">Freecodecamp Front End Development Libraries Certification</li>
+                        <p class="periode">Juli 2023</p>
+                        <p class="lembaga">Kursus penggunaan libraries seperti Bootstrap, React, dan Babel, diselesaikan dalam waktu kurang lebih 80 jam.</p>
+                        <a href="https://drive.google.com/file/d/1tekSnDCQNmRI_OLHuWLWd3ii4bFNPxLP/view?usp=drive_link" target="_blank"><div class="getcertif">Lihat sertifikat 👉🏼</div></a>
+                    <br>
+
+                    <li class="organisasi">Sertifikat Lulus Magang Pradita Corporate Partner Lounge</li>
+                        <p class="periode">Juli 2023</p>
+                        <p class="lembaga">Menyelesaikan masa magang 3 bulan sebagai front desk admin di coworking space milik Pradita University.</p>
+                        <a href="https://drive.google.com/file/d/10Qg0nw1in7MGbTRL_axVZDzDhkxIBpYO/view?usp=drive_link" target="_blank"><div class="getcertif">Lihat sertifikat 👉🏼</div></a>
+                    <br>
+                </ul>
             </div>
-        </section>
-     </main>
-    <footer class="socials">
-        <h3>Find me here:</h3>
-            <a class="socmed" href="https://www.instagram.com/antonius.renard/" target="_blank">
-                <ion-icon name="logo-instagram"></ion-icon>
-            </a>
-            <a class="socmed" href="https://www.linkedin.com/in/antonius-renard-ba5170222/" target="_blank">
-                <ion-icon name="logo-linkedin"></ion-icon>
-            </a>
-    </footer>
+            <div id="projects" class="experience">
+                <h3>Coding Projects</h3>
+                <br>
+                <ul>
+                    <li class="organisasi">UAS Programming Python</li>
+                        <p class="periode">Desember 2022</p>
+                        <p class="lembaga">Program untuk mempermudah proses pengambilan nilai raport siswa</p>
+                        <a href="https://drive.google.com/file/d/158xiB_4Wb8vTXANHCXT7Ks63kgpc1PML/view?usp=drive_link" target="_blank"><div class="getcertif">Lihat sertifikat 👉🏼</div></a>
+                    <br>
+
+                    <li class="organisasi">Kalkulator Sederhana</li>
+                        <p class="periode">Mei 2023</p>
+                        <p class="lembaga">Kalkulator sederhana yang dibuat dengan HTML, CSS, dan JS</p>
+                        <a href="https://codepen.io/SatpamMesjid/pen/BaGqVpY" target="_blank"><div class="getcertif">Lihat sertifikat 👉🏼</div></a>
+                    <br> 
+
+                    <li class="organisasi">Random Quote Generator</li>
+                        <p class="periode">Juli 2023</p>
+                        <p class="lembaga">Percobaan projek React.JS sederhana</p>
+                        <a href="https://codepen.io/SatpamMesjid/pen/abQawVY" target="_blank"><div class="getcertif">Lihat sertifikat 👉🏼</div></a>
+                    <br>
+
+                    <li class="organisasi">Drumpads Sederhana</li>
+                        <p class="periode">Juli 2023</p>
+                        <p class="lembaga">Projek React.JS yang dibuat untuk memenuhi syarat kelulusan kursus Freecodecamp</p>
+                        <a href="https://codepen.io/SatpamMesjid/pen/XWyxbqm" target="_blank"><div class="getcertif">Lihat sertifikat 👉🏼</div></a>
+                    <br>
+                </ul>
+            </div>
+        </div>
+    </section>
 </body>
+<footer class="socials">
+    <h3>Find me here:</h3>
+    <br>
+    <div class="socials-link">
+        <a class="socmed" href="antonius.renard72@gmail.com" target="_blank">
+            <ion-icon name="mail-outline"></ion-icon>
+        <a class="socmed" href="https://www.instagram.com/antonius.renard/" target="_blank">
+            <ion-icon name="logo-instagram"></ion-icon>
+        </a>
+        <a class="socmed" href="https://www.linkedin.com/in/antonius-renard-ba5170222/" target="_blank">
+            <ion-icon name="logo-linkedin"></ion-icon>
+        </a>
+        <a class="socmed" href="https://github.com/Renard72" target="_blank">
+            <ion-icon name="logo-github"></ion-icon>
+        </a>
+    </div>
+</footer>
+</html>
