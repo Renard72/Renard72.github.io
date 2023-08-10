@@ -15,22 +15,16 @@ header, nav{
     width: 100%;
     justify-items: center;
     top:0;
-}
-h1{
-    list-style: none;
-    margin: 0;
-    padding: 0.75em;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    position: fixed;
+    z-index: 2;
 }
 img{
     min-width: 125px;
-    max-width: 540px;
+    max-width: 480px;
     padding-top: 1em;
 }
 .menu{
-    position: fixed;
     width: 100vw;
-    z-index: 1;
     display: flex;
     background-color: #fbfbfb;
 }
@@ -64,9 +58,159 @@ img{
 }
 main{
     display:flex;
-    flex-direction:column-reverse;
-    margin-right: auto ;
+    flex-direction:row;
+    margin-right: auto;
     margin-left: auto;
+    width: 100%;
+    height: 100vh;
+    background-color: #213ac4;
+}
+.outer-circle{
+    position:relative;
+    width: 400px;
+    height: 400px;
+    background-color:white;
+    top: 25%;
+    left: 18%;
+    border-radius: 50%;
+    justify-content: center;
+    align-items: center;
+}
+.inner-circle{
+    position: relative;
+    width: 380px;
+    height: 380px;
+    border-radius: 50%;
+    background-color: rgb(180, 246, 248);
+    top:10px;
+    left: 10px;
+    overflow: hidden;
+}
+.person{
+    width:97.5%;
+    height:70%;
+}
+.head{
+    height:27.5%;
+    width: 25%;
+    background-color: burlywood;
+    border-radius: 25px 10px 30px 30px;
+    position: relative;
+    top:32.5%;
+    left:30%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    rotate: 10deg;
+}
+.hair{
+    height:50px;
+    width: 28.5%;
+    background-color:black;
+    border-radius: 40px 20px 80px 15px;
+    rotate: 10deg;
+    position: relative;
+    top:60%;
+    left:31.5%;
+}
+.side-hair{
+    height: 50px;
+    width:30px;
+    background-color: black;
+    rotate: 10deg;
+    position: relative;
+    top:48%;
+    left:30%;
+    z-index: 1;
+    border-radius: 15px 0 20px 15px;
+}
+.eye{
+    height: 8px;
+    width: 4px;
+    background-color: black;
+    border-radius: 40%;
+    position:relative;
+    top: 25%;
+    left: 25%;  
+}
+.chest{
+    background-color:orange;
+    width: 28%;
+    height: 70%;
+    position:relative;
+    top: 30.5%;
+    left: 22.5%; 
+    rotate: 10deg;
+    border-radius: 25px;
+}
+.neck{
+  height: 0; 
+  border-left: 20px solid transparent;
+  border-right: 20px solid transparent;
+  border-top: 20px solid rgb(182, 131, 65);
+  width: 0;
+  position: relative;
+  left: 42.5% ;
+}
+.laptop{
+    width: 135px;
+    height:25%;
+    background-color: rgb(27, 22, 53);
+    transform: skew(170deg);
+    position: relative;
+    left: 50%;
+    rotate: 0.1deg;
+    border-radius: 5px;
+}
+.keyboard{
+    width: 300px;
+    height:6px;
+    background-color: rgb(12, 5, 49);
+    position: relative;
+    left: 20%;
+}
+.desk{
+    width:100%;
+    height:30px;
+    background-color: rgb(82, 48, 4);
+    position: relative;
+}
+.intro{
+    width: 35%;
+    height: 50%;
+    text-align: justify;
+    position: relative;
+    left:15%;
+    top: 35%;
+}
+h1, h2, .scroll-down{
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+}
+h2{
+    font-weight: 200;
+}
+.scroll-down{
+    font-size: medium;
+    background-color: #213ac4;
+    padding-top: 0.5em;
+    padding-bottom: 0.5em;
+    padding-left: 1em;
+    padding-right: 1em;
+    border-color: white;
+    border-radius: 10px;
+}
+.scroll-down:hover,.scroll-down:active,a{
+    transition: ease-in-out;
+    transition-delay: 200ms;
+    transition-duration: 400ms;
+}
+.scroll-down:hover,.scroll-down:active{
+    background-color: white;
+}
+a{
+    text-decoration: none;
+    color: white;
 }
 section{
     display: flex;
@@ -74,6 +218,7 @@ section{
     margin-top: 80px;
     margin-left: auto;
     margin-right: auto;
+    scroll-margin: 10vh;
 }
 aside, .biodata, .experience{
     background-color:#fbfbfb;
@@ -82,6 +227,11 @@ aside, .biodata, .experience{
     border-radius: 10px;
     font-family: Arial, Helvetica, sans-serif;
     z-index: 0;
+    scroll-margin: 18vh;
+}
+.leftside{
+    justify-content: center;
+    align-items: center;
 }
 aside{
     text-align: center;
@@ -104,7 +254,7 @@ ul li{
 p{
     margin-bottom: 0;
 }
-#summary>p{
+#summary p{
     text-align: justify;
     line-height: 1.3em;
 }
@@ -126,21 +276,34 @@ p{
 }
 article{
     display:flex;
-    flex-flow: column;
+    flex-direction: column;
     z-index: 0;
+    max-width: 40%
 }
 .minicards{
     display:flex;
-    flex-direction: row;
+    flex-direction: column;
 }
 .experience h3{
     margin:0;
 }
-h1, h4, h3{
+h4, h3, a:hover{
     color:#213ac4;
 }
 h4{
     font-size: larger;
+}
+.getcertif{
+    margin-top: 1em;
+    margin-bottom: 1em;
+    text-align: center;
+    padding: 0.4em;
+    color: #213ac4;
+    background-color: none;
+    border-radius: 5px;
+    border: solid 0.5px gray;
+    width:30%;
+    font-size: small;
 }
 .certification{
     display: flex;
@@ -151,11 +314,6 @@ button ion-icon{
     padding-left: 0.5em;
     color: #fbfbfb;
 }
-.doku{
-    width: 330px;
-    margin: 1.5em;
-    align-self: center;
-}
 footer{
     background-color: #213ac4;
     color:#fbfbfb;
@@ -163,6 +321,8 @@ footer{
     display: flex;
     flex-direction: column;
     padding: 1.5em;
+    justify-content: center;
+    align-items: center;
 }
 footer h3{
     color: #fbfbfb !important;
@@ -174,8 +334,9 @@ footer h3{
 .socmed{
     color: #fbfbfb;
     font-size: 2em;
+    padding: 0.5em;
 }
-@media only screen and (max-width: 1080px){
+@media only screen and (max-width: 540px){
     body{
         display: flex;
         flex-direction: column;
@@ -188,7 +349,10 @@ footer h3{
         width: 100%;
         object-fit: fill;
     }
-    main, section{
+    .intro{
+        height: 30%;
+    }
+    section{
         display: block;
         margin-left: auto;
         margin-right: auto;
