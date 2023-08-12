@@ -65,6 +65,9 @@ main{
     height: 100vh;
     background-color: #213ac4;
 }
+.illustration{
+    margin: 0;
+}
 .outer-circle{
     position:relative;
     width: 400px;
@@ -175,7 +178,7 @@ main{
   border-top: 20px solid rgb(182, 131, 65);
   width: 0;
   position: relative;
-  left: 42% ;
+  left: 42%;
 }
 .animated-upper-arm{
     height: 85px;
@@ -288,14 +291,15 @@ h2{
     padding-right: 1em;
     border-color: white;
     border-radius: 10px;
+    text-align: center;
+    width: fit-content;
 }
-.scroll-down:hover,.scroll-down:active,a{
+.scroll-down:hover,.scroll-down:active{
     transition: ease-in-out;
     transition-delay: 200ms;
     transition-duration: 400ms;
-}
-.scroll-down:hover,.scroll-down:active{
     background-color: white;
+    color: #213ac4;
 }
 a{
     text-decoration: none;
@@ -427,55 +431,141 @@ footer h3{
     font-size: 2em;
     padding: 0.5em;
 }
-@media only screen and (max-width: 540px){
+@media only screen and (max-width: 720px){
     body{
         display: flex;
         flex-direction: column;
+        height: 200%;
+        justify-content: center;
+        align-items: center;
     }
     header{
         width:100vw; 
     }
-    .navlink{
-        justify-content: space-evenly;
+    .menu{
+        height: 125px;
+    }
+    .menu ul{
+        display: none;
     }
     main{
         display: flex;
         flex-direction: column;
         justify-content: center;
         align-items: center;
+        width: 720px;
+        height: 1600px;
     }
     .illustration{
-        width: 100%;
-    }
-    footer{
-        width: 100%;
-        object-fit: fill;
-    }
-    .intro{
-        height: 30%;
-    }
-    section{
-        display: block;
+        width: 540px;
         margin-left: auto;
         margin-right: auto;
+    }
+    .outer-circle{
+        left: 15%;
+        top: 0%;
+    }
+    .intro{
+        display: flex;
+        flex-direction: column;
+        height: 30%;
+        width: 55%;
+        left: 0%;
+        top: 5%;
         justify-content: center;
         align-items: center;
     }
-    aside, #experience, .minicards, #sertif{
-        width: 90vw;
-        height: fit-content;
+    .scroll-down{
+        font-size: 30px;
+        width: 90%;
+        margin-top: 0.6em;
+    }
+    h1{
+        text-align: center;
+        font-size: 40px;
+    }
+    h2{
+        font-size: 35px;
+        
+    }
+    section{
+        display: block;
+        width: 720px;
+        justify-content: center;
+        align-items: center;
         margin-left: auto;
         margin-right: auto;
-    }
-    #tools, #lang{
-        width: 100%;
-        margin-left: 0;
     }
     .navigation{
         width: 100%;
     }
+    aside{
+        width: 90%;
+        justify-content: center; 
+        align-items: center;
+    }
+    aside img{
+        position: relative;
+        left: 35%;
+        width: 180px;
+    }
+    .leftside{
+        width: 94%;
+        align-self: center;
+        display: block;
+    }
+    .areabiodata{
+        text-align: center;
+        padding-bottom: 2em;
+    }
     .nav{
         display: flex;
         width: fit-content;
+    }
+    .info, .leftside .experience{
+        font-size: 30px;
+    }
+    .leftside .experience ,.experience{
+        width: 85%;
+    }
+    .leftside .experience ul li{
+        font-size: 30px;
+        padding-top: 0.6em;
+    }
+    article{
+        max-width: 80%;
+    }
+    #experience{
+        width: 100%;
+    }
+    .experience{
+        width: 100%;
+        font-size: 30px;
+        padding-top: 0.6em;
+    }
+    .experience h3{
+        padding-top: 1em;
+    }
+    .experience h4{
+        font-size: 28px;
+    }
+    .lembaga{
+        font-size: 24px;
+    }
+    .periode, .posisi, #experience ul li{
+        font-size: 20px;
+    }
+    .getcertif{
+        font-size: 20px;
+    }
+    footer{
+        width: 980px;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+    }
+    footer .socials-link, footer h3{
+        left: 15%;
+        position: relative;
     }
 }
